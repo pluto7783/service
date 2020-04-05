@@ -14,7 +14,7 @@ $(function(){
 <div id="content">
 	<jsp:include page="../common/navbar.jsp" />
 
-	<h2>테트리스</h2>
+	<h2>${msg }</h2>
 	
 	
 	

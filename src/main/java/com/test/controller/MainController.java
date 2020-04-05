@@ -1,9 +1,5 @@
 package com.test.controller;
 
-import java.text.DateFormat;
-import java.util.Date;
-import java.util.Locale;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -31,7 +27,7 @@ public class MainController {
 	public String tetris(Model model) {
 		logger.info("##### tetirs");
 		
-		model.addAttribute("msg", "테트리스");
+		model.addAttribute("msg", "개발중");
 		
 		return "/tetris/tetris";
 	}
