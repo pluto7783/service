@@ -3,7 +3,7 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<jsp:include page="common/header.jsp" />
+	<jsp:include page="../common/header.jsp" />
 <script>
 $(function(){
 	console.log("default js")
@@ -12,11 +12,25 @@ $(function(){
 </head>
 <body>
 <div id="content">
-	<jsp:include page="common/navbar.jsp" />
+	<jsp:include page="../common/navbar.jsp" />
 
-	<P>  ${msg} </P>
+	<h2>테트리스</h2>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
-	<jsp:include page="common/footer.jsp" />
+	<jsp:include page="../common/footer.jsp" />
 </div>
 </body>
 </html>

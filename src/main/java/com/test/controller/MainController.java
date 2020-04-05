@@ -20,14 +20,20 @@ public class MainController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
-		
-		
+	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	public String index(Model model) {
 		model.addAttribute("msg", "메인");
 		
 		return "main";
+	}
+	
+	@RequestMapping(value = "/tetris", method = RequestMethod.GET)
+	public String tetris(Model model) {
+		logger.info("##### tetirs");
+		
+		model.addAttribute("msg", "테트리스");
+		
+		return "/tetris/tetris";
 	}
 	
 }
